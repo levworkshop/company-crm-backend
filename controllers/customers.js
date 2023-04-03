@@ -43,7 +43,7 @@ module.exports = {
                 lastName: joi.string().min(2).max(200).required(),
                 phone: joi.string().min(9).max(12).required(),
                 email: joi.string().min(6).max(255).required(),
-                Address: joi.string().min(6).max(350).required(),
+                Address: joi.string().min(6).max(350),
             });
 
             const { error, value } = schema.validate(req.body);

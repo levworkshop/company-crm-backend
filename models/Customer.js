@@ -28,7 +28,6 @@ const customerSchema = new mongoose.Schema({
     },
     Address: {
         type: String,
-        required: true,
         minlength: 6,
         maxlength: 350,
         unique: true,
